@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regions Mortgage Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-section">
+            <div class="logo">
+                <img src="logo2.png" alt="Regions Mortgage">
+                <div style="margin-top: 35px"><h3>REGIONS</h3>
+                     Mortgage</div>
+                <div class="top-right-container"> <!-- Added container for label and button -->
+                    <h6>Are you a new customer?</h6>
+                    <button id="hoverButton" class="hover-btn">Enroll now</button>
+                    <div class="hover-box">
+                        <p style="font-weight: bold; color: white; margin-top: 10px">Enroll now to:</p>
+                        <ul style="list-style: none;">
+                            <li style="white-space: nowrap; margin-top: 10px;">✔️ Access your loans online</li>
+                            <li style="white-space: nowrap; margin-top: 10px;">✔️ Pay your mortgage online</li>
+                            <li style="white-space: nowrap; margin-top: 10px;">✔️ View your mortgage statements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h1>Welcome Back</h1>
+            <p>Sign in to your Regions MyMortgage account.</p>
+
+            <form id="loginForm">
+                <div class="input-container">
+                    <input type="text" id="onlineId" placeholder=" " required>
+                    <label for="onlineId">Online ID</label>
+                </div>
+
+                <div class="input-container">
+                    <input type="password" id="password" placeholder=" " required>
+                    <label for="password">Password</label>
+                </div>
+
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+
+                <button type="submit" class="login-btn" disabled>Login</button>
+            </form>
+
+            <div class="forgot-links">
+                <a href="#">Forgot Online ID?</a>
+                <a href="#">Forgot Password?</a>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img src="house1.jpg" alt="House">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

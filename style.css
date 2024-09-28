@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1250px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding-top: 50px; /* Added padding to lower the input fields */
+}
+
+.image-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: none;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 18px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #1dac0a;
+}
+
+input[type="text"]:focus + label,
+input[type="password"]:focus + label,
+input[type="text"].filled + label,
+input[type="password"].filled + label {
+  top: 10px; /* Adjusted to keep label inside input */
+  left: 15px; /* Adjusted to keep label inside input */
+  font-size: 12px;
+  color: #1dac0a;
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #666;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.remember-me {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.remember-me input[type="checkbox"] {
+  margin-right: 380px;
+  vertical-align: middle;
+}
+
+.remember-me label {
+  font-size: 14px;
+  vertical-align: middle;
+  color: #666;
+  margin-left: 12px;
+}
+
+.login-btn {
+  padding: 10px 20px;
+  background-color: #bbb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.login-btn.enabled {
+  background-color: green;
+}
+
+.forgot-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.forgot-links a {
+  color: green;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.logo {
+  position: absolute;
+  display: flex;
+  top: 20px;
+  left: 20px;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.top-right-container {
+  position: absolute;
+  display: flex;
+  margin-top: 34.3px;
+  margin-left: 400px;
+  align-items: center;
+}
+
+.top-right-container h6 {
+  margin-right: 10px;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #6666;
+}
+
+.hover-btn {
+  font-weight: bolder;
+  padding: 7px 10px;
+  background-color: transparent;
+  color: #1dac0a;
+  border-radius: 50px;
+  border: 1px solid #1dac0a;
+  white-space: nowrap;
+}
+
+.hover-box {
+  width: 100%;
+  height: 180px;
+  display: none; /* Hide by default */
+  position: absolute;
+  background-color: #181818e6; /* or any color you prefer */
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Make sure it appears above other elements */
+  margin-left: 10px;
+  margin-top: 260px;
+}
+
+.hover-btn:hover + .hover-box {
+  display: block; /* Show the box on hover */
+}
